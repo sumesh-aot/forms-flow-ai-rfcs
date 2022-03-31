@@ -26,21 +26,21 @@ Formsflow would continue supporting keycloak groups from a backward compatibilti
 ### Keycloak changes
 - Need an empty camunda-admin group, no one needs to be assigned : To avoid this, need to make lot of changes on camunda plugins which may cause issue with version upgrades later.
 - 3 clients needs to be created per project. 
-	- <project-identifier>-forms-flow-web with audience mapper of same name
-	- <project-identifier>-forms-flow-bpm (Service account) with audience mapper of <project-identifier>-forms-flow-web and <project-identifier>-forms-flow-bpm 
-	- <project-identifier>-forms-flow-analytics with audience mapper of same name
-- Default 4 roles under <project-identifier>-forms-flow-web
-	- forms-flow-designer
-	- forms-flow-client
-	- forms-flow-reviewer
-	- camunda-admin
-- Any additional client roles can come under web or <project-identifier>-forms-flow-analytics client as per project requirement.
-- <project-identifier>-forms-flow-bpm needs service account access with roles:
-	- manage-clients
-	- manage-users
-	- query-clients
-	- query-users
-	- view-users
+	- `<project-identifier>-forms-flow-web` with audience mapper of same name
+	- `<project-identifier>-forms-flow-bpm` (Service account) with audience mapper of `<project-identifier>-forms-flow-web` and `<project-identifier>-forms-flow-bpm` 
+	- `<project-identifier>-forms-flow-analytics` with audience mapper of same name
+- Default 4 roles under `<project-identifier>-forms-flow-web`
+	- `forms-flow-designer`
+	- `forms-flow-client`
+	- `forms-flow-reviewer`
+	- `camunda-admin`
+- Any additional client roles can come under web or `<project-identifier>-forms-flow-analytics` client as per project requirement.
+- `<project-identifier>-forms-flow-bpm` needs service account access with roles:
+	- `manage-clients`
+	- `manage-users`
+	- `query-clients`
+	- `query-users`
+	- `view-users`
 
 
 ### Alternatives Considered

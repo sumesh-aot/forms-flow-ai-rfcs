@@ -3,10 +3,9 @@
 ```mermaid
 sequenceDiagram
     actor  User
-    actor  Admin
+    participant Custom Web
     participant Formsflow
     participant Camunda
-    participant Custom Web
     participant Custom API
     participant ELSTER
     participant ePayBL

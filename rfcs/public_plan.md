@@ -20,14 +20,14 @@ sequenceDiagram
         Custom API ->> Custom API : Save business details and create a JWT for UI
         Custom Web ->> Formsflow : Authenticate use using cutom jwt
 
-    par Authenticate with AD
+    and Authenticate with AD
         User ->> Formsflow : Authenticate request
         Formsflow ->> Keycloak : TEST
         Keycloak ->> AD : Delegate authentication
         Keycloak ->> Keycloak : Map AD groups
         Keycloak ->> Formsflow : Authenticated JWT
 
-    par Payment with ePayBL
+    and Payment with ePayBL
         User ->> Custom Web : Payment details page
         Custom Web ->> Custom API : Initiate pay request
         Custom API ->> ePayBL : Initiate pay request

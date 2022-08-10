@@ -27,12 +27,6 @@ sequenceDiagram
         Keycloak ->> Keycloak : Map AD groups
         Keycloak ->> Formsflow : Authenticated JWT
 
-    par Payment with ePayBL
-        User ->> Custom Web : Payment details page
-        Custom Web ->> Custom API : Initiate pay request
-        Custom API ->> ePayBL : Initiate pay request
-        Custom Web ->> ePayBL : Pay redirect for online payment
-        Custom Web ->> Custom API : Validate payment result
     
     end
 

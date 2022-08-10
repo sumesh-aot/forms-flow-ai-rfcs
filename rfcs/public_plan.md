@@ -30,7 +30,8 @@ sequenceDiagram
         Custom Web ->> Custom API : Initiate pay request
         Custom API ->> ePayBL : Initiate pay request
         Custom Web ->> ePayBL : Pay redirect for online payment
-        Custom Web ->> Custom API : vValidate payment result
+        Custom Web ->> Custom API : Validate payment result
+
     end
 
 

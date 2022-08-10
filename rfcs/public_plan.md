@@ -22,7 +22,7 @@ sequenceDiagram
 
     par Authenticate with AD
         User ->> Formsflow : Authenticate request
-        Formsflow ->> Keycloak : 
+        Formsflow ->> Keycloak : TEST
         Keycloak ->> AD : Delegate authentication
         Keycloak ->> Keycloak : Map AD groups
         Keycloak ->> Formsflow : Authenticated JWT

@@ -13,7 +13,6 @@
 
 ```mermaid
 graph TD
-  graph TD
   A[Master Branch] --> B[Feature Branch]
   B --> C[Development Branch]
   C --> D[Release Branch]

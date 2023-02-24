@@ -46,6 +46,7 @@ graph TD
   C4 --> C3
   C3 --> C5[Release]
   C5 --> C6[Build private image]
+  C5 --> C2
 
   O1 --> O2[Master]
   O2 --> O3[Development Branch]
@@ -55,7 +56,7 @@ graph TD
   O5 --> O6[Build public image]
   O5 --> O7[Create a PR to closed repo]
   O7 --> C3
-
+  O5 --> O2
 
 ```
 

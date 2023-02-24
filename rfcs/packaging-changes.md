@@ -53,6 +53,8 @@ graph TD
   O4 --> O3
   O3 --> O5[Release]
   O5 --> O6[Build public image]
+  O5 --> O7[Create a PR to closed repo]
+  O7 --> C3
 
 
 ```

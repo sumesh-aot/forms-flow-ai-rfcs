@@ -39,9 +39,20 @@ graph TD
 
 ```mermaid
 graph TD
-  A[Open Source Repository] --> B[Development Branch]
-  B[Test] --> E[Test 2]
-  C[Open Source Repository] --> D[Development Branch]
+  O1[Open Source Repository] --> C1[Fork a closed repo]
+  C1 --> C2[Master]
+  C2 --> C3[Development Branch]
+  C3 --> C4[Feature branch]
+  C4 --> C3
+  C3 --> C5[Release]
+  C5 --> C6[Build private image]
+
+  O1 --> O2[Master]
+  O2 --> O3[Development Branch]
+  O3 --> O4[Feature branch]
+  O4 --> O3
+  O3 --> O5[Release]
+  O5 --> O6[Build public image]
 
 
 ```

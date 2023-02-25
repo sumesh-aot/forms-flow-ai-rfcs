@@ -39,7 +39,7 @@ graph TD
 
 ```mermaid
 graph TD
-  S1[forms-flow-ai (OSS)] --> C2[Master]
+  S1[forms-flow-ai OSS] --> C2[Master]
   C2 --> S2[Fork]
   S2 --> S3[forms-flow-ai-ee]
   S3 --> S4[Master Branch]

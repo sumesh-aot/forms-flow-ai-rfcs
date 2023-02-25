@@ -39,17 +39,18 @@ graph TD
 
 ```mermaid
 graph TD
-  O1[Open Source Repository] --> C1[Fork a closed repo]
-  C1 --> C2[Master]
-  C2 --> C3[Development Branch]
+  S1[forms-flow-ai (OSS)] --> C2[Master]
+  C2 --> S2[Fork]
+  S2 --> S3[forms-flow-ai-ee]
+  S3 --> S4[Master Branch]
+  S4 --> C3[Development Branch]
   C3 --> C4[Feature branch]
   C4 --> C3
   C3 --> C5[Release]
   C5 --> C6[Build private image]
-  C5 --> C2
+  C5 --> S4
 
-  O1 --> O2[Master]
-  O2 --> O3[Development Branch]
+  C2 --> O3[Development Branch]
   O3 --> O4[Feature branch]
   O4 --> O3
   O3 --> O5[Release]

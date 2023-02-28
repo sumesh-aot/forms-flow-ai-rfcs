@@ -42,21 +42,21 @@ graph TD
   S1[forms-flow-ai OSS] --> C2[Master]
   C2 --> S2[Fork]
   S2 --> S3[forms-flow-ai-ee]
-  S3 --> S4[Master Branch (P)]
-  S4 --> C3[Development Branch (P)]
-  C3 --> C4[Feature branch (P)]
+  S3 --> S4[Prem. Master Branch]
+  S4 --> C3[Prem. Development Branch]
+  C3 --> C4[Prem. Feature branch]
   C4 --> C3
-  C3 --> C5[Release (P)]
+  C3 --> C5[Prem. Release]
   C5 --> C6[Build private image]
   C5 --> S4
 
-  C2 --> O3[Development Branch]
-  O3 --> O4[Feature branch (O)]
+  C2 --> O3[OSS Development Branch]
+  O3 --> O4[OSS Feature branch]
   O4 --> O3
-  O3 --> O5[Release (O)]
+  O3 --> O5[OSS Release]
   O5 --> O6[Build public image]
-  O5 --> O7[Create a PR to closed repo]
-  O7 --> C3
+  O5 --> O7[Create a PR to Prem.]
+  O7 --> S4
 
 ```
 

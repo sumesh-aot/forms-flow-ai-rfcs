@@ -47,7 +47,8 @@ graph TD
   C3 --> C4[Prem. Feature branch]
   C4 --> C3
   C3 --> C5[Prem. Release]
-  C5 --> C6[Build private image]
+  C5 --> C6[Build image]
+  C6 --> C8[Push to docker private repo]
   C6 --> C7[Tag release]
   C5 --> S4
 
@@ -55,7 +56,8 @@ graph TD
   O3 --> O4[OSS Feature branch]
   O4 --> O3
   O3 --> O5[OSS Release]
-  O5 --> O6[Build public image]
+  O5 --> O6[Build image]
+  O6 --> O9[Push to docker public repo]
   O6 --> O8[Tag release]
   O5 --> O7[Create a PR to Prem.]
   O7 --> S4

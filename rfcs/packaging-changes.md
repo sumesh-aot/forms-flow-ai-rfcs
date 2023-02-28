@@ -46,14 +46,14 @@ graph TD
   S4 --> C3[Development Branch]
   C3 --> C4[Premium Feature branch]
   C4 --> C3
-  C3 --> C5[Release]
+  C3 --> C5[Premium Release]
   C5 --> C6[Build private image]
   C5 --> S4
 
   C2 --> O3[Development Branch]
   O3 --> O4[Public Feature branch]
   O4 --> O3
-  O3 --> O5[Release]
+  O3 --> O5[Public Release]
   O5 --> O6[Build public image]
   O5 --> O7[Create a PR to closed repo]
   O7 --> C3

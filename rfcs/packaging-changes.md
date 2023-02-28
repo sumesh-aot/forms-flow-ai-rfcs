@@ -7,35 +7,15 @@
 
 
 ## Objective
-
+Selectively deliver features between public and premium users.
 
 ## Motivation
 
-```mermaid
-graph TD
-  A[Open Source Repository] --> B[Master Branch]
-  B --> C[Feature Branch]
-  C --> D[Development Branch]
-  D --> E[Release Branch]
-  D --> F[Hotfix Branch]
-  E --> G[Tag Release]
-  F --> G
-  C --> H[Forked Repository]
-  H --> I[Feature Branch]
-  I --> J[Development Branch]
-  J --> K[Release Branch]
-  J --> L[Hotfix Branch]
-  K --> M[Tag Release]
-  L --> M
-  K --> N[Private Repository]
-  N --> O[Feature Branch]
-  O --> P[Development Branch]
-  P --> Q[Release Branch]
-  P --> R[Hotfix Branch]
-  Q --> S[Tag Release]
-  R --> S
 
-```
+## Proposal
+
+Currently formsflow.ai is single github [repository](https://github.com/aot-technologies/forms-flow-ai). Proposal is to fork the same repository into a closed repository for easy synchronization from open source to premium codebase.
+
 
 ```mermaid
 graph TD
@@ -64,6 +44,9 @@ graph TD
 
 ```
 
-## Proposal
+## Challenges
 
-$$
+Maintaining 2 separate codebase comes up with some challenges including;
+- Database migration conflicts.
+- Increased testing effort as every release has to be tested on both versions.
+- Structuring the code to have less impact on merge/upgrades.

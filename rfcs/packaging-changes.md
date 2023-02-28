@@ -48,6 +48,7 @@ graph TD
   C4 --> C3
   C3 --> C5[Prem. Release]
   C5 --> C6[Build private image]
+  C6 --> C7[Tag release]
   C5 --> S4
 
   C2 --> O3[OSS Development Branch]
@@ -55,6 +56,7 @@ graph TD
   O4 --> O3
   O3 --> O5[OSS Release]
   O5 --> O6[Build public image]
+  O6 --> O8[Tag release]
   O5 --> O7[Create a PR to Prem.]
   O7 --> S4
 

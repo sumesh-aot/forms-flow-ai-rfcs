@@ -60,7 +60,7 @@ graph TD
   O6 --> O9[Push to docker public repo]
   O6 --> O8[Tag release]
   O5 --> O7[Create a PR to Prem.]
-  O7 --> C3
+  O7 --> S4
 
 ```
 
